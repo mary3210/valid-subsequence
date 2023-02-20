@@ -11,11 +11,16 @@ if not return false
 
 function isValidSubsequence(array, sequence) {
     // Write your code here.
-
+    for (i in array){
+        if (sequence[i] in array){
+            console.log(sequence[i])
+        }
+    }
   }
   
 array = [5, 1, 22, 25, 6, -1, 8, 10]
 sequence = [1, 6, -1, 10]
 
+isValidSubsequence([5, 1, 22, 25, 6, -1, 8, 10], [1, 6, -1, 10])
   // Do not edit the line below.
   exports.isValidSubsequence = isValidSubsequence;
