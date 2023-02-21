@@ -17,6 +17,7 @@ function isValidSubsequence(array, sequence) {
                 idx++;
         }
     }
+    return idx === sequence.length;
   }
   
 array = [5, 1, 22, 25, 6, -1, 8, 10]
